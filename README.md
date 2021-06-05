@@ -1,4 +1,4 @@
-# Youtube Video Page
+# Mint Signup Page
 
 A frontend clone of the Mint signup page.
 
