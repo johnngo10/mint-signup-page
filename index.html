@@ -8,46 +8,74 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
+    <div class="signin-container">
       <div>
         <p>Already have an Intuit account?</p>
-        <p>I forgot my UserID or Password</p>
+        <p class="links">I forgot my UserID or Password</p>
       </div>
       <button>Sign In</button>
-    </nav>
-    <main>
-      <img src="" alt="" id="logo" />
-      <div>
-        <div>
+    </div>
+    <header>
+      <h1 id="intuit-logo">INTUIT</h1>
+      <div class="apps-container">
+        <div class="apps">
           <img src="" alt="" />
           <p>mint</p>
         </div>
-        <div>
+        <div class="apps">
           <img src="" alt="" />
           <p>quickbooks</p>
         </div>
-        <div>
+        <div class="apps">
           <img src="" alt="" />
           <p>turbotax</p>
         </div>
       </div>
+    </header>
+    <main>
+      <!-- <img src="" alt="" id="logo" /> -->
       <form action="#">
-        <fieldset>
-          <label for="email-address">
-            Email Address
-            <input type="text" />
-          </label>
-          <label for="phone">
-            Phone(recommended)
-            <input type="text" />
-          </label>
-          <label for="password">
-            Password
-            <input type="text" />
-          </label>
+        <fieldset class="form-header">
+          <h2>Create an Inituit account</h2>
+          <p>
+            One account for everything Intuit, including Mint.
+            <span class="links">Learn More</span>
+          </p>
+        </fieldset>
+        <fieldset class="signup-inputs">
+          <div>
+            <label for="email-address" class="input-labels">
+              Email Address
+              <input type="text" />
+            </label>
+          </div>
+          <div>
+            <label for="phone" class="input-labels">
+              Phone(recommended)
+              <input type="text" />
+            </label>
+          </div>
+          <div>
+            <label for="password" class="input-labels">
+              Password
+              <input type="text" />
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="submit-form">
+          <input type="submit" name="submit" value="Create Account" />
         </fieldset>
         <fieldset>
-          <input type="submit" name="submit" value="Create Account" />
+          <p>
+            By selecting Create Account, you agree to our
+            <span class="links">Terms</span> and have read and acknowledge our
+            <span class="links">Global Privacy Statement</span> .
+          </p>
+        </fieldset>
+        <fieldset>
+          Invisible reCAPTCHA by Google
+          <span class="links">Privacy Policy</span> and
+          <span class="links">Terms of Use</span> .
         </fieldset>
       </form>
     </main>
